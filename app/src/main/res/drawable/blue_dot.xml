@@ -1,0 +1,6 @@
+<!-- blue_dot.xml -->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#0000FF" /> <!-- Blue color -->
+    <size android:width="50dp" android:height="50dp" /> <!-- Dot size -->
+    <corners android:radius="25dp" /> <!-- Make it a circle -->
+</shape>

@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <!-- Πλέγμα και Container για τις γραμμές -->
+    <FrameLayout
+        android:id="@+id/gridContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/buttonContainer">
+
+        <!-- Πλέγμα -->
+
+        <!-- Container για τις γραμμές -->
+        <RelativeLayout
+            android:id="@+id/lineContainer"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:clipChildren="false"
+            android:clipToPadding="false" >
+
+            <com.example.design_house.GridView
+                android:id="@+id/gridView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+    </FrameLayout>
+
+    <!-- Κουμπί για Download (πάνω δεξιά) -->
+    <ImageButton
+        android:id="@+id/btnDownload"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Save Image"
+        android:src="@drawable/save3"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <ImageButton
+        android:id="@+id/btnMoveCanvas"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="68dp"
+        android:layout_marginEnd="8dp"
+        android:contentDescription="Move Canvas"
+        android:src="@drawable/move_canva"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <ImageButton
+        android:id="@+id/btnClear"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="128dp"
+        android:contentDescription="Clear Canvas"
+        android:src="@drawable/clear"
+        android:background="?attr/selectableItemBackgroundBorderless" />
+
+    <!-- Κουμπιά κάτω -->
+    <LinearLayout
+        android:id="@+id/buttonContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="8dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnAddLine"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="0dp"
+            android:background="@android:color/holo_blue_light"
+            android:padding="4dp"
+            android:text="+ Wall"
+            android:textColor="@android:color/white"
+            android:textSize="11sp" />
+
+        <LinearLayout
+            android:id="@+id/buttonContainer2"
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="0dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnAddWindow"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginEnd="0dp"
+                android:background="@android:color/holo_blue_light"
+                android:padding="0dp"
+                android:text="+ Window"
+                android:textColor="@android:color/white"
+                android:textSize="11sp" />
+
+            <Button
+                android:id="@+id/btnAddBalconyWindow"
+                android:layout_width="80dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="0dp"
+                android:background="@android:color/holo_blue_light"
+                android:padding="0dp"
+                android:text="+ Balcony Window"
+                android:textColor="@android:color/white"
+                android:textSize="11sp" />
+        </LinearLayout>
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btnMoveCanvas"-->
+        <!--            android:layout_width="80dp"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:text="Move Canvas"-->
+        <!--            android:textSize="7sp"-->
+        <!--            android:layout_marginEnd="4dp"-->
+        <!--            android:background="@android:color/holo_blue_bright"-->
+        <!--            android:textColor="@android:color/white" />-->
+        <Spinner
+            android:id="@+id/selectedRoom"
+            android:layout_width="75dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/buttonContainer"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/spinner_border"
+            android:layout_marginEnd="1dp"
+            android:entries="@array/room_options" />
+
+        <Spinner
+            android:id="@+id/selectedDevice"
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/buttonContainer"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/spinner_border"
+            android:entries="@array/devices_options" />
+
+
+        <!--        <Button-->
+        <!--            android:id="@+id/btnClear"-->
+        <!--            android:layout_width="80dp"-->
+        <!--            android:layout_height="40dp"-->
+        <!--            android:text="Clear"-->
+        <!--            android:textSize="7sp"-->
+        <!--            android:background="@android:color/holo_red_light"-->
+        <!--            android:textColor="@android:color/white" />-->
+    </LinearLayout>
+
+
+</RelativeLayout>

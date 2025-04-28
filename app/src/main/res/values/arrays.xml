@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="room_options">
+        <item>Rooms</item>
+        <item>Bedroom</item>
+        <item>Living Room</item>
+        <item>Kitchen</item>
+        <item>Bathroom</item>
+    </string-array>
+    <string-array name="devices_options">
+        <item>Devices</item>
+        <item>Refrigerator - green</item>
+        <item>Washing machine - blue</item>
+        <item>Dryer - yellow</item>
+        <item>Dishwasher - purple</item>
+        <item>Water heater - orange</item>
+        <item>Oven - red</item>
+        <item>HVAC - gray</item>
+    </string-array>
+</resources>

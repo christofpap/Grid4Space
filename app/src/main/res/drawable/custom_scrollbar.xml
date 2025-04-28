@@ -1,0 +1,17 @@
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Scrollbar track -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners android:radius="4dp" />
+            <solid android:color="#151414" /> <!-- Track color -->
+        </shape>
+    </item>
+
+    <!-- Scrollbar thumb -->
+    <item android:id="@android:id/progress">
+        <shape>
+            <corners android:radius="4dp" />
+            <solid android:color="#FF5722" /> <!-- Thumb color -->
+        </shape>
+    </item>
+</layer-list>
